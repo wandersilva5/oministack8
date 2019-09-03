@@ -15,7 +15,6 @@ export default function Login({ history }){
             username, //como a variavel username é igual ao compo não precisa colocar username:username,
         });
 
-        console.log(username);
         const { _id } = response.data;
 
         history.push(`/dev/${_id}`);
